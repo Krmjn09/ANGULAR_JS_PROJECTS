@@ -69,12 +69,7 @@
     </form>
   </div>
 </div>
-<div  class="row mt-3">
-   @for(course of courses; track $index)
-   {
-    <app-courses [course] = "course"></app-courses>
-   }
-   @empty {
-    <div class="text-center">No courses available</div>
-   }
-</div>
+ <app-courses [courses] = "courses"
+ [isAdmin] = "true"
+ (del) = "deleteCourse($event)"
+ ></app-courses>

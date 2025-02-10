@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
-import { CoursesComponent } from '../pages/courses/courses.component';
-import { Strings } from '../enum/strings.enum';
+import { CoursesComponent } from '../courses/courses.component';
+import { Strings } from '../../enum/strings.enum';
 import { OnInit } from '@angular/core';
 
 @Component({

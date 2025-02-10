@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Strings } from '../enum/strings.enum';
-import { CoursesComponent } from '../pages/courses/courses.component';
+import { Strings } from '../../enum/strings.enum';
+import { CoursesComponent } from '../courses/courses.component';
 @Component({
   selector: 'app-home',
   standalone: true,
