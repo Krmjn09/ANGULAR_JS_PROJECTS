@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
+import { Course } from '../../interfaces/course.interface';
 
 @Component({
   selector: 'app-courses',
@@ -10,7 +11,7 @@ import { EventEmitter } from '@angular/core';
   styleUrl: './courses.component.scss'
 })
 export class CoursesComponent {
- @Input() courses: any;
+ @Input() courses: Course[] = [];
  @Input() isAdmin = false;
  @Output() del = new EventEmitter();
 
